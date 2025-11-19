@@ -1,0 +1,1172 @@
+[
+  {
+    "id": 1,
+    "category": "Définitions",
+    "question": "Qu'est-ce qu'un graphe simple ?",
+    "options": [
+      "Un graphe sans boucles ni arêtes multiples",
+      "Un graphe avec peu de sommets",
+      "Un graphe qui n'est pas connexe",
+      "Un graphe orienté sans cycles"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un graphe simple est un graphe non orienté qui ne possède ni boucles (arête reliant un sommet à lui-même) ni arêtes multiples entre deux mêmes sommets."
+  },
+  {
+    "id": 2,
+    "category": "Eulerien",
+    "question": "Quelle est la condition nécessaire et suffisante pour qu'un graphe connexe admette un cycle eulérien ?",
+    "options": [
+      "Tous les sommets sont de degré pair",
+      "Il a exactement deux sommets de degré impair",
+      "Il possède un cycle hamiltonien",
+      "Le nombre d'arêtes est égal au nombre de sommets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Théorème d'Euler : Un graphe connexe admet un cycle eulérien (passant par toutes les arêtes une seule fois et revenant au départ) si et seulement si tous ses sommets sont de degré pair."
+  },
+  {
+    "id": 3,
+    "category": "Eulerien",
+    "question": "Si un graphe connexe possède exactement deux sommets de degré impair, que peut-on dire ?",
+    "options": [
+      "Il admet une chaîne eulérienne mais pas de cycle eulérien",
+      "Il admet un cycle eulérien",
+      "Il n'est pas eulérien du tout",
+      "Il est hamiltonien"
+    ],
+    "correctAnswer": 0,
+    "explanation": "S'il y a exactement deux sommets de degré impair, il existe une chaîne eulérienne (chemin passant par toutes les arêtes) qui commence à l'un des sommets impairs et finit à l'autre."
+  },
+  {
+    "id": 4,
+    "category": "Hamiltonien",
+    "question": "Qu'est-ce un cycle hamiltonien ?",
+    "options": [
+      "Un cycle qui passe par tous les sommets du graphe exactement une fois",
+      "Un cycle qui passe par toutes les arêtes du graphe exactement une fois",
+      "Un cycle qui contient un nombre impair d'arêtes",
+      "Un cycle qui ne passe jamais deux fois par la même arête"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un cycle hamiltonien visite chaque SOMMET du graphe exactement une fois (et revient au point de départ). Ne pas confondre avec eulérien (qui concerne les ARÊTES)."
+  },
+  {
+    "id": 5,
+    "category": "Hamiltonien",
+    "question": "Le problème de déterminer si un graphe arbitraire est hamiltonien est :",
+    "options": [
+      "NP-complet",
+      "Résoluble en temps polynomial",
+      "Impossible",
+      "Trivial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Contrairement aux graphes eulériens où la condition est simple (degrés pairs), savoir si un graphe est hamiltonien est un problème NP-complet (très difficile algorithmiquement pour les grands graphes)."
+  },
+  {
+    "id": 6,
+    "category": "Arbres",
+    "question": "Combien d'arêtes possède un arbre avec n sommets ?",
+    "options": [
+      "n - 1",
+      "n",
+      "n + 1",
+      "2n"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Une propriété fondamentale des arbres est qu'ils possèdent toujours exactement n-1 arêtes, où n est le nombre de sommets."
+  },
+  {
+    "id": 7,
+    "category": "Connexité",
+    "question": "Un graphe est dit 'connexe' si :",
+    "options": [
+      "Il existe un chemin entre n'importe quelle paire de sommets",
+      "Tous les sommets sont reliés à tous les autres",
+      "Il ne contient pas de cycle",
+      "Il contient un cycle eulérien"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La connexité signifie qu'il est possible d'aller de n'importe quel sommet à n'importe quel autre sommet en suivant une suite d'arêtes."
+  },
+  {
+    "id": 8,
+    "category": "Degrés",
+    "question": "La somme des degrés des sommets d'un graphe est égale à :",
+    "options": [
+      "Deux fois le nombre d'arêtes",
+      "Le nombre d'arêtes",
+      "Le nombre de sommets au carré",
+      "Zéro"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est le lemme des poignées de main : chaque arête a deux extrémités, donc elle contribue pour 2 à la somme totale des degrés."
+  },
+  {
+    "id": 9,
+    "category": "Planaire",
+    "question": "Quelle est la formule d'Euler pour un graphe planaire connexe (v sommets, e arêtes, f faces) ?",
+    "options": [
+      "v - e + f = 2",
+      "v + e - f = 2",
+      "v - e - f = 0",
+      "e - v + f = 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La formule d'Euler pour les graphes planaires est v - e + f = 2 (Sommets - Arêtes + Faces = 2)."
+  },
+  {
+    "id": 10,
+    "category": "Coloration",
+    "question": "Qu'est-ce que le nombre chromatique d'un graphe ?",
+    "options": [
+      "Le nombre minimum de couleurs pour colorier les sommets sans que deux voisins aient la même couleur",
+      "Le nombre de couleurs nécessaires pour colorier les arêtes",
+      "Le nombre maximum de couleurs qu'on peut utiliser",
+      "Le nombre de cycles dans le graphe"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le nombre chromatique χ(G) est le plus petit nombre de couleurs nécessaires pour une coloration valide des sommets (deux sommets adjacents ne doivent pas avoir la même couleur)."
+  },
+  {
+    "id": 11,
+    "category": "Matrice",
+    "question": "Dans une matrice d'adjacence A d'un graphe simple, que représente A[i][j] = 1 ?",
+    "options": [
+      "Il existe une arête entre le sommet i et le sommet j",
+      "Le chemin entre i et j est de longueur 1",
+      "Les sommets i et j sont identiques",
+      "Le sommet i a un degré de 1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La matrice d'adjacence code les connexions : si l'élément à la ligne i et colonne j vaut 1 (ou vrai), cela signifie que les sommets i et j sont adjacents."
+  },
+  {
+    "id": 12,
+    "category": "Biparti",
+    "question": "Un graphe est biparti si et seulement si :",
+    "options": [
+      "Il ne contient pas de cycle de longueur impaire",
+      "Il ne contient pas de cycle de longueur paire",
+      "Il est planaire",
+      "Il est 3-coloriable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un graphe est biparti si on peut diviser ses sommets en deux ensembles disjoints. Une caractérisation célèbre est qu'un graphe est biparti ssi il ne contient aucun cycle de longueur impaire."
+  },
+  {
+    "id": 13,
+    "category": "Arbres",
+    "question": "Lequel de ces énoncés est FAUX concernant un arbre ?",
+    "options": [
+      "Il contient au moins un cycle",
+      "Il est connexe",
+      "Il n'a pas de cycle",
+      "L'ajout d'une arête crée exactement un cycle"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Par définition, un arbre est un graphe connexe sans cycle. Donc dire qu'il contient un cycle est faux."
+  },
+  {
+    "id": 14,
+    "category": "Hamiltonien",
+    "question": "Théorème de Dirac : Un graphe simple à n sommets (n ≥ 3) est hamiltonien si le degré de chaque sommet est au moins :",
+    "options": [
+      "n / 2",
+      "n - 1",
+      "n / 3",
+      "2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le théorème de Dirac stipule que si chaque sommet a un degré ≥ n/2, alors le graphe est hamiltonien."
+  },
+  {
+    "id": 15,
+    "category": "Isomorphisme",
+    "question": "Deux graphes sont isomorphes si :",
+    "options": [
+      "On peut renommer les sommets de l'un pour obtenir l'autre en conservant les adjacences",
+      "Ils ont le même nombre de sommets",
+      "Ils ont le même nombre d'arêtes",
+      "Ils ont les mêmes degrés pour chaque sommet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "L'isomorphisme est une correspondance structurelle exacte : même nombre de sommets, d'arêtes, et surtout la même structure de connexion entre eux."
+  },
+  {
+    "id": 16,
+    "category": "Complet",
+    "question": "Combien d'arêtes possède un graphe complet K_n (graphe où tout le monde est relié à tout le monde) ?",
+    "options": [
+      "n(n-1) / 2",
+      "n^2",
+      "n",
+      "n(n+1) / 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chaque sommet est relié aux n-1 autres. Comme chaque arête compte pour deux sommets, le total est n(n-1)/2."
+  },
+  {
+    "id": 17,
+    "category": "Algorithmes",
+    "question": "Lequel de ces algorithmes permet de trouver le plus court chemin dans un graphe pondéré positivement ?",
+    "options": [
+      "Dijkstra",
+      "Kruskal",
+      "Prim",
+      "DFS (Parcours en profondeur)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "L'algorithme de Dijkstra est conçu pour trouver les plus courts chemins à partir d'une source unique dans un graphe avec des poids positifs."
+  },
+  {
+    "id": 18,
+    "category": "Algorithmes",
+    "question": "À quoi servent les algorithmes de Kruskal et Prim ?",
+    "options": [
+      "Trouver un arbre couvrant minimal (ACM)",
+      "Trouver le plus court chemin",
+      "Trouver un cycle eulérien",
+      "Calculer le flot maximum"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kruskal et Prim sont les deux algorithmes classiques pour trouver un Arbre Couvrant Minimal (Minimum Spanning Tree) dans un graphe pondéré connexe."
+  },
+  {
+    "id": 19,
+    "category": "Planaire",
+    "question": "Théorème de Kuratowski : Un graphe est planaire si et seulement si...",
+    "options": [
+      "Il ne contient pas de sous-graphe homéomorphe à K5 ou K3,3",
+      "Il ne contient pas de croisement d'arêtes",
+      "Il a moins de 10 sommets",
+      "Il est biparti"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kuratowski a caractérisé les graphes planaires par l'absence de deux motifs interdits : le graphe complet K5 et le graphe biparti complet K3,3."
+  },
+  {
+    "id": 20,
+    "category": "Flots",
+    "question": "Théorème Max-Flow Min-Cut :",
+    "options": [
+      "Le flot maximum dans un réseau est égal à la capacité de la coupe minimale",
+      "Le flot maximum est égal à la somme des capacités de toutes les arêtes",
+      "La coupe minimale est toujours nulle",
+      "Le flot ne peut jamais dépasser le nombre de sommets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Ce théorème fondamental stipule que la quantité maximale de flot qu'on peut passer d'une source à un puits est limitée par le 'goulot d'étranglement' du réseau (la coupe de capacité minimale)."
+  },
+  {
+    "id": 21,
+    "category": "Définitions",
+    "question": "Qu'est-ce que l'ordre d'un graphe ?",
+    "options": [
+      "Son nombre de sommets",
+      "Son nombre d'arêtes",
+      "Le degré maximum de ses sommets",
+      "Son nombre chromatique"
+    ],
+    "correctAnswer": 0,
+    "explanation": "L'ordre d'un graphe désigne simplement son nombre de sommets (souvent noté n ou |V|)."
+  },
+  {
+    "id": 22,
+    "category": "Définitions",
+    "question": "Qu'est-ce qu'une forêt en théorie des graphes ?",
+    "options": [
+      "Un graphe sans cycle (union disjointe d'arbres)",
+      "Un graphe avec beaucoup d'arbres couvrants",
+      "Un graphe très dense",
+      "Un graphe coloré en vert"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Une forêt est un graphe non orienté acyclique. Ses composantes connexes sont des arbres."
+  },
+  {
+    "id": 23,
+    "category": "Eulerien",
+    "question": "Le problème du postier chinois consiste à :",
+    "options": [
+      "Trouver un circuit le plus court passant par toutes les arêtes au moins une fois",
+      "Trouver un chemin passant par tous les sommets",
+      "Distribuer le courrier le plus vite possible sans contrainte",
+      "Colorier une carte avec 4 couleurs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le problème du postier chinois cherche un chemin fermé de poids minimum qui emprunte chaque arête au moins une fois. Si le graphe est eulérien, c'est simplement le cycle eulérien."
+  },
+  {
+    "id": 24,
+    "category": "Hamiltonien",
+    "question": "Le problème du voyageur de commerce (TSP) est une généralisation de quel concept ?",
+    "options": [
+      "Cycle Hamiltonien",
+      "Cycle Eulérien",
+      "Arbre couvrant",
+      "Couplage"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le TSP cherche le cycle hamiltonien de poids minimum dans un graphe pondéré complet. C'est un problème NP-difficile."
+  },
+  {
+    "id": 25,
+    "category": "Connexité",
+    "question": "Qu'est-ce qu'un point d'articulation ?",
+    "options": [
+      "Un sommet dont la suppression augmente le nombre de composantes connexes",
+      "Un sommet de degré 1",
+      "Un sommet relié à tous les autres",
+      "Le centre du graphe"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un point d'articulation est un sommet critique : si on l'enlève (avec ses arêtes incidentes), le graphe se déconnecte davantage."
+  },
+  {
+    "id": 26,
+    "category": "Connexité",
+    "question": "Qu'est-ce qu'un pont (ou isthme) ?",
+    "options": [
+      "Une arête dont la suppression augmente le nombre de composantes connexes",
+      "Une arête reliant deux sommets de même couleur",
+      "Un chemin entre deux composantes",
+      "Une arête de poids nul"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un pont est l'équivalent d'un point d'articulation mais pour les arêtes. Si on coupe un pont, le graphe se sépare."
+  },
+  {
+    "id": 27,
+    "category": "Coloration",
+    "question": "Théorème des 4 couleurs : Tout graphe planaire est :",
+    "options": [
+      "4-coloriable",
+      "3-coloriable",
+      "5-coloriable",
+      "2-coloriable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Célèbre résultat prouvé en 1976 : toute carte plane (ou graphe planaire) peut être coloriée avec au plus 4 couleurs sans que deux régions adjacentes aient la même."
+  },
+  {
+    "id": 28,
+    "category": "Hypergraphe",
+    "question": "Qu'est-ce qui distingue un hypergraphe d'un graphe classique ?",
+    "options": [
+      "Une arête peut relier plus de deux sommets",
+      "Il a plus de 3 dimensions",
+      "Les arêtes sont orientées",
+      "Il n'a pas de sommets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dans un hypergraphe, une 'hyper-arête' est un sous-ensemble de sommets de taille quelconque, pas juste une paire."
+  },
+  {
+    "id": 29,
+    "category": "Oriente",
+    "question": "Dans un graphe orienté, la somme des degrés entrants est égale à :",
+    "options": [
+      "La somme des degrés sortants",
+      "Le nombre de sommets",
+      "Zéro",
+      "L'infini"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chaque arc part d'un sommet (degré sortant +1) et arrive à un autre (degré entrant +1). La somme totale des entrants égale donc la somme totale des sortants (égale au nombre d'arcs)."
+  },
+  {
+    "id": 30,
+    "category": "Tournoi",
+    "question": "Qu'est-ce qu'un graphe tournoi ?",
+    "options": [
+      "Un graphe orienté complet (chaque paire de sommets est reliée par exactement un arc)",
+      "Un graphe utilisé pour le sport",
+      "Un graphe sans cycle",
+      "Un graphe biparti complet"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un tournoi est un graphe orienté où il y a exactement un arc entre chaque paire de sommets distincts (comme si tout le monde jouait contre tout le monde et qu'il y avait un gagnant)."
+  },
+  {
+    "id": 31,
+    "category": "Complexité",
+    "question": "Que signifie P dans la théorie de la complexité ?",
+    "options": [
+      "Polynomial time (Temps polynomial)",
+      "Probabilistic time (Temps probabiliste)",
+      "Parallel time (Temps parallèle)",
+      "Polynomial space (Espace polynomial)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La classe P regroupe les problèmes de décision qui peuvent être résolus par un algorithme déterministe en un temps polynomial par rapport à la taille de l'entrée."
+  },
+  {
+    "id": 32,
+    "category": "Complexité",
+    "question": "Que signifie NP dans la théorie de la complexité ?",
+    "options": [
+      "Non-deterministic Polynomial time",
+      "Non-Polynomial time",
+      "New Polynomial time",
+      "Near Polynomial time"
+    ],
+    "correctAnswer": 0,
+    "explanation": "NP signifie 'Non-deterministic Polynomial time'. Ce sont les problèmes dont une solution proposée peut être VÉRIFIÉE en temps polynomial."
+  },
+  {
+    "id": 33,
+    "category": "Complexité",
+    "question": "Un problème est NP-complet si :",
+    "options": [
+      "Il est dans NP et tout problème de NP peut s'y réduire en temps polynomial",
+      "Il ne peut pas être résolu",
+      "Il est dans P mais pas dans NP",
+      "Il est résoluble en temps linéaire"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un problème est NP-complet s'il est à la fois dans NP (vérifiable facilement) et NP-difficile (aussi dur que tous les autres problèmes de NP)."
+  },
+  {
+    "id": 34,
+    "category": "Complexité",
+    "question": "Lequel de ces problèmes de graphes est connu pour être dans P (facile) ?",
+    "options": [
+      "Cycle Eulérien",
+      "Cycle Hamiltonien",
+      "Coloration de graphe (k-coloration pour k>2)",
+      "Voyageur de commerce (TSP)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Trouver un cycle eulérien est facile (vérifier les degrés pairs), c'est dans P. Les autres sont NP-complets."
+  },
+  {
+    "id": 35,
+    "category": "Complexité",
+    "question": "Le problème de la k-coloration (savoir si un graphe est k-coloriable) est NP-complet pour k >= ?",
+    "options": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La 2-coloration est facile (graphes bipartis, dans P). Mais dès k=3, le problème devient NP-complet."
+  },
+  {
+    "id": 36,
+    "category": "Complexité",
+    "question": "Le problème du couplage maximum (Maximum Matching) est-il dans P ou NP-complet ?",
+    "options": [
+      "Dans P",
+      "NP-complet",
+      "Indécidable",
+      "NP-difficile mais pas dans NP"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le couplage maximum peut être résolu efficacement (algorithme d'Edmonds), donc il est dans la classe P."
+  },
+  {
+    "id": 37,
+    "category": "Complexité",
+    "question": "Si P = NP, alors :",
+    "options": [
+      "Tous les problèmes NP-complets peuvent être résolus en temps polynomial",
+      "Tous les problèmes deviennent indécidables",
+      "La cryptographie devient plus sûre",
+      "Les ordinateurs quantiques deviennent inutiles"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est la conséquence majeure : si P=NP, alors tous les problèmes difficiles (TSP, factorisation, etc.) dont on peut vérifier la solution vite pourraient aussi être RÉSOLUS vite."
+  },
+  {
+    "id": 38,
+    "category": "Complexité",
+    "question": "Le problème de la Clique Maximum (trouver la plus grande clique dans un graphe) est :",
+    "options": [
+      "NP-complet",
+      "Dans P",
+      "Dans P pour les graphes planaires",
+      "Trivial"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le problème de la Clique est un des problèmes classiques NP-complets (parmi les 21 problèmes de Karp)."
+  },
+  {
+    "id": 39,
+    "category": "Complexité",
+    "question": "Le problème de l'Isomorphisme de Graphes est-il NP-complet ?",
+    "options": [
+      "On ne sait pas (c'est un problème ouvert majeur, probablement 'NP-intermédiaire')",
+      "Oui, c'est prouvé",
+      "Non, il est prouvé être dans P",
+      "Non, il est indécidable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "L'isomorphisme de graphes est un cas rare : il est dans NP, mais on ne sait pas s'il est dans P ni s'il est NP-complet. On pense qu'il est entre les deux."
+  },
+  {
+    "id": 40,
+    "category": "Complexité",
+    "question": "Le problème du Vertex Cover (Couverture par sommets) est :",
+    "options": [
+      "NP-complet",
+      "Dans P",
+      "Identique au problème du couplage",
+      "Résoluble en O(n log n)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Trouver la couverture minimale par sommets est un problème NP-complet classique."
+  },
+  {
+    "id": 41,
+    "category": "Complexité",
+    "question": "Qu'est-ce qu'un problème NP-Difficile (NP-Hard) ?",
+    "options": [
+      "Un problème au moins aussi difficile que tous les problèmes de NP",
+      "Un problème qui est dans NP mais pas dans P",
+      "Un problème impossible à résoudre",
+      "Un problème qui nécessite un temps exponentiel"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un problème est NP-Difficile si tout problème de NP peut s'y réduire en temps polynomial. Il n'est pas nécessairement dans NP (il peut être encore plus dur)."
+  },
+  {
+    "id": 42,
+    "category": "Complexité",
+    "question": "Quelle est la complexité du problème du Plus Long Chemin (Longest Path) dans un graphe général ?",
+    "options": [
+      "NP-complet",
+      "P (Polynomial)",
+      "Logarithmique",
+      "Identique au plus court chemin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Contrairement au plus court chemin (Dijkstra, BFS), trouver le chemin simple le plus long est un problème NP-complet."
+  },
+  {
+    "id": 43,
+    "category": "Complexité",
+    "question": "Le problème de l'Ensemble Indépendant (Independent Set) consiste à :",
+    "options": [
+      "Trouver un ensemble de sommets deux à deux non adjacents",
+      "Trouver un ensemble de sommets tous reliés entre eux",
+      "Trouver un ensemble d'arêtes disjointes",
+      "Trouver un cycle unique"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un ensemble indépendant est un ensemble de sommets où aucune paire de sommets n'est reliée par une arête. Trouver le plus grand est NP-complet."
+  },
+  {
+    "id": 44,
+    "category": "Complexité",
+    "question": "Le problème 3-SAT (satisfaisabilité booléenne) est célèbre car :",
+    "options": [
+      "C'est le premier problème prouvé NP-complet (Théorème de Cook-Levin)",
+      "Il est résoluble en temps linéaire",
+      "Il ne concerne pas les graphes",
+      "Il est dans P"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le théorème de Cook a établi que SAT (et 3-SAT) est NP-complet, servant de base pour prouver la NP-complétude d'autres problèmes via réduction."
+  },
+  {
+    "id": 45,
+    "category": "Complexité",
+    "question": "Quelle est la complexité de la vérification d'une solution pour un problème NP ?",
+    "options": [
+      "Temps Polynomial",
+      "Temps Exponentiel",
+      "Temps Factoriel",
+      "Temps Infini"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est la définition même de NP : si on vous donne une solution ('certificat'), vous pouvez vérifier qu'elle est correcte en temps polynomial."
+  },
+  {
+    "id": 46,
+    "category": "Complexité",
+    "question": "Le problème du Dominating Set (Ensemble Dominant) est :",
+    "options": [
+      "NP-complet",
+      "Dans P",
+      "Trivial pour les graphes réguliers",
+      "Impossible"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Trouver un ensemble dominant minimum (tel que tout sommet est soit dedans, soit voisin d'un sommet dedans) est NP-complet."
+  },
+  {
+    "id": 47,
+    "category": "Complexité",
+    "question": "Le problème de la Coupe Maximum (Max-Cut) est :",
+    "options": [
+      "NP-complet",
+      "Dans P (comme Min-Cut)",
+      "Résoluble par Ford-Fulkerson",
+      "Facile pour les graphes bipartis"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Alors que Min-Cut est facile (dual du Max-Flow), trouver la coupe maximum est un problème NP-complet."
+  },
+  {
+    "id": 48,
+    "category": "Complexité",
+    "question": "Quelle est la complexité de l'algorithme BFS (Parcours en Largeur) ?",
+    "options": [
+      "O(V + E) - Temps linéaire",
+      "O(V^2)",
+      "O(2^V) - Exponentiel",
+      "O(1)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "BFS et DFS visitent chaque sommet et chaque arête une fois au maximum, donc leur complexité est linéaire par rapport à la taille du graphe."
+  },
+  {
+    "id": 49,
+    "category": "Complexité",
+    "question": "Le problème du Sac à Dos (Knapsack) est :",
+    "options": [
+      "NP-complet (mais pseudo-polynomial)",
+      "Dans P",
+      "Indécidable",
+      "Toujours facile"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le problème du sac à dos est NP-complet, mais il existe des algorithmes de programmation dynamique qui le résolvent efficacement si les poids sont petits (pseudo-polynomial)."
+  },
+  {
+    "id": 50,
+    "category": "Complexité",
+    "question": "Qu'est-ce que la classe co-NP ?",
+    "options": [
+      "Les problèmes dont le COMPLÉMENT est dans NP",
+      "Les problèmes faciles",
+      "Les problèmes impossibles",
+      "Les problèmes résolus par deux ordinateurs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "co-NP contient les problèmes où l'on peut vérifier efficacement un NON-exemple (ou contre-exemple). Par exemple, prouver qu'un graphe n'est PAS hamiltonien."
+  },
+  {
+    "id": 51,
+    "category": "Complexité",
+    "question": "Le problème de Steiner Tree (Arbre de Steiner) dans les graphes est :",
+    "options": [
+      "NP-complet",
+      "Dans P (comme Spanning Tree)",
+      "Facile",
+      "Linéaire"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Contrairement à l'arbre couvrant minimal (MST) qui est facile, l'arbre de Steiner (qui ne doit connecter qu'un sous-ensemble de sommets) est NP-complet."
+  },
+  {
+    "id": 52,
+    "category": "Complexité",
+    "question": "Le problème du Feedback Vertex Set (trouver k sommets pour casser tous les cycles) est :",
+    "options": [
+      "NP-complet",
+      "Dans P",
+      "Trivial pour les graphes orientés",
+      "Impossible"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est un problème NP-complet classique, utilisé notamment dans l'analyse de circuits ou de processus pour éliminer les boucles de rétroaction."
+  },
+  {
+    "id": 53,
+    "category": "Complexité",
+    "question": "Si un problème A se réduit polynomialement à un problème B, et que B est dans P, alors :",
+    "options": [
+      "A est dans P",
+      "A est NP-complet",
+      "B est NP-complet",
+      "On ne sait rien sur A"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Si A est 'plus facile ou égal' à B (réduction), et que B est facile (P), alors A doit aussi être facile (P)."
+  },
+  {
+    "id": 54,
+    "category": "Complexité",
+    "question": "Le problème de savoir si un graphe contient une clique de taille k (k étant une variable d'entrée) est :",
+    "options": [
+      "NP-complet",
+      "Dans P",
+      "O(n^k)",
+      "Indécidable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est le problème de la Clique. Si k est fixé (ex: k=3), c'est polynomial (O(n^3)), mais si k fait partie de l'entrée, c'est NP-complet."
+  },
+  {
+    "id": 55,
+    "category": "Complexité",
+    "question": "Le problème de la coloration d'arêtes (Indice chromatique) est :",
+    "options": [
+      "NP-complet (pour déterminer si c'est Delta ou Delta+1)",
+      "Dans P",
+      "Toujours égal au degré maximum",
+      "Facile"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le théorème de Vizing dit que l'indice est soit Δ, soit Δ+1. Décider lequel des deux est un problème NP-complet."
+  },
+  {
+    "id": 56,
+    "category": "Complexité",
+    "question": "Le problème du plus court chemin avec des poids négatifs (sans cycle négatif) est résoluble par :",
+    "options": [
+      "Bellman-Ford (Temps polynomial)",
+      "Dijkstra",
+      "Aucun algorithme",
+      "Uniquement en temps exponentiel"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Bellman-Ford résout ce problème en O(V*E), ce qui est polynomial."
+  },
+  {
+    "id": 57,
+    "category": "Complexité",
+    "question": "Le problème du plus court chemin avec des cycles négatifs est :",
+    "options": [
+      "NP-difficile (car on peut le réduire au plus long chemin)",
+      "Dans P",
+      "Facile avec Dijkstra",
+      "Impossible à définir"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Si on autorise des cycles négatifs, le 'plus court chemin' peut être -infini. Trouver un chemin simple optimal dans ce cas devient équivalent au problème du plus long chemin (NP-difficile)."
+  },
+  {
+    "id": 58,
+    "category": "Complexité",
+    "question": "Quelle est la classe de complexité de la vérification de l'isomorphisme de deux arbres ?",
+    "options": [
+      "P (Temps linéaire)",
+      "NP-complet",
+      "Indécidable",
+      "Exponentiel"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pour des arbres, l'isomorphisme peut être vérifié très efficacement (en temps linéaire ou quasi-linéaire), c'est beaucoup plus simple que pour des graphes généraux."
+  },
+  {
+    "id": 59,
+    "category": "Complexité",
+    "question": "Le problème K-Center (placer k centres pour minimiser la distance max) est :",
+    "options": [
+      "NP-complet",
+      "Dans P",
+      "Facile",
+      "O(n log n)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est un problème de localisation classique, NP-complet."
+  },
+  {
+    "id": 60,
+    "category": "Complexité",
+    "question": "La complexité spatiale (Space Complexity) de DFS récursif est :",
+    "options": [
+      "O(V) - proportionnelle à la profondeur",
+      "O(1)",
+      "O(V^2)",
+      "O(E)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dans le pire cas (un chemin), la pile de récursion peut atteindre une profondeur V."
+  },
+  {
+    "id": 61,
+    "category": "Général",
+    "question": "Théorème de Hall (Mariages) : Une condition nécessaire et suffisante pour un couplage parfait dans un graphe biparti est :",
+    "options": [
+      "Pour tout sous-ensemble S de sommets d'un côté, |N(S)| >= |S|",
+      "Le graphe est connexe",
+      "Le graphe est régulier",
+      "Le nombre de sommets est pair"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La condition de Hall stipule que chaque groupe de sommets doit avoir au moins autant de voisins qu'il y a de membres dans le groupe."
+  },
+  {
+    "id": 62,
+    "category": "Général",
+    "question": "Dans un graphe planaire, la somme des degrés des faces est égale à :",
+    "options": [
+      "2 fois le nombre d'arêtes",
+      "Le nombre de sommets",
+      "Le nombre de faces",
+      "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Analogue au lemme des poignées de main pour les sommets : chaque arête borde deux faces (ou deux fois la même), donc la somme des degrés des faces est 2|E|."
+  },
+  {
+    "id": 63,
+    "category": "Général",
+    "question": "Qu'est-ce que le graphe de Petersen ?",
+    "options": [
+      "Un graphe cubique célèbre à 10 sommets, non planaire",
+      "Un graphe complet K10",
+      "Un arbre binaire",
+      "Un cycle de 10 sommets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le graphe de Petersen est un contre-exemple classique en théorie des graphes. Il est 3-régulier, a 10 sommets, 15 arêtes, et n'est pas planaire."
+  },
+  {
+    "id": 64,
+    "category": "Général",
+    "question": "Qu'est-ce que la maille (girth) d'un graphe ?",
+    "options": [
+      "La longueur du plus petit cycle",
+      "La longueur du plus grand cycle",
+      "Le diamètre du graphe",
+      "Le nombre de faces"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La maille est la longueur du cycle le plus court contenu dans le graphe. Si le graphe est acyclique, la maille est infinie."
+  },
+  {
+    "id": 65,
+    "category": "Général",
+    "question": "Le diamètre d'un graphe est :",
+    "options": [
+      "La plus grande distance (plus court chemin) entre deux sommets quelconques",
+      "La longueur du cycle le plus long",
+      "Le nombre maximum d'arêtes",
+      "Le rayon x 2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le diamètre est le 'pire' des plus courts chemins : c'est la distance maximale qu'on doit parcourir pour aller d'un point A à un point B de manière optimale."
+  },
+  {
+    "id": 66,
+    "category": "Général",
+    "question": "Formule de Cayley : Combien d'arbres couvrant différents possède un graphe complet K_n ?",
+    "options": [
+      "n^(n-2)",
+      "n!",
+      "2^n",
+      "n^2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est un résultat célèbre : le nombre d'arbres couvrants sur n sommets étiquetés est n à la puissance n-2."
+  },
+  {
+    "id": 67,
+    "category": "Général",
+    "question": "Qu'est-ce qu'un graphe régulier ?",
+    "options": [
+      "Un graphe où tous les sommets ont le même degré",
+      "Un graphe sans cycle",
+      "Un graphe planaire",
+      "Un graphe avec des arêtes de même longueur"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un graphe est k-régulier si chaque sommet a exactement k voisins."
+  },
+  {
+    "id": 68,
+    "category": "Général",
+    "question": "Théorème de Vizing : L'indice chromatique (coloration des arêtes) d'un graphe de degré max Δ est :",
+    "options": [
+      "Soit Δ, soit Δ+1",
+      "Toujours Δ",
+      "Toujours Δ+1",
+      "Δ+2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "On ne peut pas faire mieux que Δ (car un sommet a Δ arêtes incidentes), et Vizing a prouvé qu'on n'a jamais besoin de plus de Δ+1 couleurs."
+  },
+  {
+    "id": 69,
+    "category": "Général",
+    "question": "Qu'est-ce qu'une composante fortement connexe ?",
+    "options": [
+      "Un sous-graphe orienté où tout sommet est accessible depuis tout autre sommet",
+      "Un sous-graphe avec beaucoup d'arêtes",
+      "Un cycle",
+      "Une clique"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dans un graphe orienté, une composante fortement connexe est un ensemble maximal de sommets u, v tels qu'il existe un chemin de u vers v ET de v vers u."
+  },
+  {
+    "id": 70,
+    "category": "Général",
+    "question": "L'algorithme de Floyd-Warshall calcule :",
+    "options": [
+      "Les plus courts chemins entre TOUTES les paires de sommets",
+      "Le plus court chemin depuis une source unique",
+      "L'arbre couvrant minimal",
+      "Le flot maximum"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Floyd-Warshall est un algorithme de programmation dynamique en O(V^3) qui donne les distances entre tous les couples de sommets."
+  },
+  {
+    "id": 71,
+    "category": "Général",
+    "question": "Qu'est-ce qu'un graphe dual ?",
+    "options": [
+      "Un graphe où les faces du graphe original deviennent des sommets",
+      "Le complémentaire du graphe",
+      "Le graphe des arêtes (Line Graph)",
+      "Un graphe inversé"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Pour un graphe planaire, le dual est construit en plaçant un sommet dans chaque face et en reliant les sommets si les faces sont adjacentes."
+  },
+  {
+    "id": 72,
+    "category": "Général",
+    "question": "Théorème de Menger : Dans un graphe fini, le nombre maximum de chemins disjoints entre deux sommets est égal à :",
+    "options": [
+      "Le nombre minimum de sommets/arêtes à supprimer pour les déconnecter",
+      "La distance entre eux",
+      "Le degré minimum",
+      "1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est une version locale du théorème Max-Flow Min-Cut : la connectivité est déterminée par le goulot d'étranglement (la coupe minimale)."
+  },
+  {
+    "id": 73,
+    "category": "Général",
+    "question": "Qu'est-ce qu'un Line Graph (Graphe adjoint) L(G) ?",
+    "options": [
+      "Un graphe où chaque sommet représente une arête de G",
+      "Un graphe en forme de ligne",
+      "Un sous-graphe linéaire",
+      "Le dual du graphe"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Dans L(G), les sommets sont les arêtes de G. Deux sommets de L(G) sont reliés si les arêtes correspondantes dans G avaient une extrémité commune."
+  },
+  {
+    "id": 74,
+    "category": "Général",
+    "question": "Une matrice Laplacienne est définie comme :",
+    "options": [
+      "L = D - A (Degrés - Adjacence)",
+      "L = D + A",
+      "L = A - D",
+      "L = A * A"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La matrice Laplacienne combine les informations de degrés et de connexions. Elle joue un rôle clé en théorie spectrale des graphes."
+  },
+  {
+    "id": 75,
+    "category": "Général",
+    "question": "Le centre d'un graphe est l'ensemble des sommets qui :",
+    "options": [
+      "Minimisent l'excentricité (distance max aux autres)",
+      "Maximisent le degré",
+      "Sont au milieu du dessin",
+      "Appartiennent à tous les cycles"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le centre est constitué des sommets qui sont 'les moins loin' du sommet le plus éloigné. Leur excentricité est égale au rayon du graphe."
+  },
+  {
+    "id": 76,
+    "category": "Général",
+    "question": "Un graphe complet K5 est-il planaire ?",
+    "options": [
+      "Non, jamais",
+      "Oui",
+      "Seulement si on courbe les arêtes",
+      "Oui si n < 5"
+    ],
+    "correctAnswer": 0,
+    "explanation": "K5 est le plus petit graphe complet non planaire. C'est l'un des deux obstacles de Kuratowski."
+  },
+  {
+    "id": 77,
+    "category": "Général",
+    "question": "Théorème de Konig : Dans un graphe biparti, la taille du couplage maximum est égale à :",
+    "options": [
+      "La taille de la couverture minimale par sommets (Vertex Cover)",
+      "La taille de l'ensemble indépendant maximum",
+      "Le nombre de sommets",
+      "Le nombre d'arêtes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est un résultat fondamental pour les graphes bipartis : Max Matching = Min Vertex Cover."
+  },
+  {
+    "id": 78,
+    "category": "Général",
+    "question": "Qu'est-ce qu'un tri topologique ?",
+    "options": [
+      "Un ordre linéaire des sommets respectant les flèches (pour les DAG)",
+      "Un tri des sommets par degré",
+      "Un tri des arêtes par poids",
+      "Une classification des graphes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Le tri topologique n'est possible que pour les graphes orientés acycliques (DAG). Il aligne les sommets de sorte que toutes les arêtes pointent vers la droite."
+  },
+  {
+    "id": 79,
+    "category": "Général",
+    "question": "Combien de couleurs faut-il pour colorier un cycle de longueur impaire ?",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Un cycle pair est biparti (2 couleurs). Un cycle impair a besoin d'une 3ème couleur pour fermer la boucle sans conflit."
+  },
+  {
+    "id": 80,
+    "category": "Général",
+    "question": "L'algorithme A* (A-Star) utilise une heuristique pour :",
+    "options": [
+      "Guider la recherche et trouver le chemin plus vite que Dijkstra",
+      "Trouver le chemin le plus long",
+      "Garantir un temps constant",
+      "Éviter les cycles négatifs"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A* utilise f(n) = g(n) + h(n), où h(n) est une estimation du coût restant, pour prioriser les sommets prometteurs."
+  },
+  {
+    "id": 81,
+    "category": "Général",
+    "question": "Un graphe est dit 'cordal' si :",
+    "options": [
+      "Tout cycle de longueur > 3 possède une corde (arête reliant deux sommets non adjacents du cycle)",
+      "Il ressemble à une corde",
+      "Il est connexe",
+      "Il est biparti"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Les graphes cordaux sont une classe importante où de nombreux problèmes NP-complets deviennent faciles."
+  },
+  {
+    "id": 82,
+    "category": "Général",
+    "question": "La densité d'un graphe est :",
+    "options": [
+      "Le rapport entre le nombre d'arêtes existantes et le nombre d'arêtes possibles",
+      "Le nombre de sommets",
+      "Le poids total des arêtes",
+      "Le nombre de cycles"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La densité mesure à quel point le graphe est proche d'être complet. Elle varie entre 0 (vide) et 1 (complet)."
+  },
+  {
+    "id": 83,
+    "category": "Général",
+    "question": "Qu'est-ce qu'une clique dans un graphe ?",
+    "options": [
+      "Un sous-ensemble de sommets tous reliés entre eux",
+      "Un groupe de sommets isolés",
+      "Un cycle",
+      "Un arbre"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Une clique est un sous-graphe complet induit. Trouver la clique maximum est un problème difficile."
+  },
+  {
+    "id": 84,
+    "category": "Général",
+    "question": "Quelle est la particularité d'un graphe K3,3 ?",
+    "options": [
+      "Il n'est pas planaire (Graphe des maisons et des usines)",
+      "Il est planaire",
+      "Il est complet",
+      "Il a 9 sommets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "K3,3 est le graphe biparti complet avec 3 sommets de chaque côté. C'est le deuxième obstacle de Kuratowski à la planarité."
+  },
+  {
+    "id": 85,
+    "category": "Général",
+    "question": "Le nombre de Ramsey R(3,3) est égal à :",
+    "options": [
+      "6",
+      "5",
+      "9",
+      "3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Cela signifie que dans tout groupe de 6 personnes, il y a soit 3 amis mutuels, soit 3 étrangers mutuels. (K6 contient forcément un K3 ou un K3 vide)."
+  },
+  {
+    "id": 86,
+    "category": "Général",
+    "question": "Un graphe est k-connexe si :",
+    "options": [
+      "Il faut supprimer au moins k sommets pour le déconnecter",
+      "Il a k composantes connexes",
+      "Il a k sommets",
+      "Le degré max est k"
+    ],
+    "correctAnswer": 0,
+    "explanation": "La k-connexité mesure la robustesse du graphe. Un graphe 2-connexe n'a pas de point d'articulation."
+  },
+  {
+    "id": 87,
+    "category": "Général",
+    "question": "L'algorithme de Kosaraju sert à :",
+    "options": [
+      "Trouver les composantes fortement connexes (SCC)",
+      "Trouver le plus court chemin",
+      "Trier topologiquement",
+      "Colorier le graphe"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Kosaraju utilise deux passes de DFS (une sur le graphe, une sur le graphe transposé) pour identifier les SCC."
+  },
+  {
+    "id": 88,
+    "category": "Général",
+    "question": "Qu'est-ce qu'un graphe de 'Petit Monde' (Small World) ?",
+    "options": [
+      "Un graphe avec un diamètre faible et un fort coefficient de clustering",
+      "Un graphe avec peu de sommets",
+      "Un graphe planaire",
+      "Un graphe déconnecté"
+    ],
+    "correctAnswer": 0,
+    "explanation": "C'est la propriété 'six degrés de séparation'. Les nœuds sont proches les uns des autres malgré la grande taille du réseau."
+  },
+  {
+    "id": 89,
+    "category": "Général",
+    "question": "Le coefficient de clustering (ou transitivité) mesure :",
+    "options": [
+      "La probabilité que deux amis d'un sommet soient aussi amis entre eux",
+      "Le nombre de clusters",
+      "La vitesse de l'algorithme",
+      "Le nombre d'arêtes"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Il quantifie la tendance des nœuds à se regrouper. C'est le ratio triangles / triades fermées possibles."
+  },
+  {
+    "id": 90,
+    "category": "Général",
+    "question": "Dans un arbre binaire parfait de hauteur h, le nombre de feuilles est :",
+    "options": [
+      "2^h",
+      "2h",
+      "h^2",
+      "2^(h+1) - 1"
+    ],
+    "correctAnswer": 0,
+    "explanation": "À chaque niveau, le nombre de nœuds double. Au niveau h (les feuilles), il y a 2^h nœuds."
+  }
+]
